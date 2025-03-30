@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="contact.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3" id="Home">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="LPVTs logo.svg" alt="Logo" style="height: 40px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <h1 style="text-align: center ; margin-top: 50px; ">Contact Us</h1>
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-12 col-lg-5" data-aos="fade-right">
+        <div class="contact-info h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h4>Get in Touch</h4>
+            <p><strong>Address:</strong>19b ilabere avenue, ikoyi, · lagos state, nigeria</p>
+            <p><strong>Email:</strong> <a href="mailto:info@levene.com">info@leveneenergy.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+15551234567">000000000</a></p>
+          </div>
+
+          <!-- Social Media -->
+          <div class="social-icons my-3">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+          <!-- Google Map -->
+          <div class="ratio ratio-4x3 mt-3">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6317079254404!2d3.4454303!3d6.441317100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4e2329cccd9%3A0xda2b4308a075fce3!2s19B%20Ilabere%20Ave%2C%20Ikoyi%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1742823203681!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-12 col-lg-7" data-aos="fade-left">
+        <div class="contact-form">
+          <h4>Send Us a Message</h4>
+          <div id="alertMessage"></div>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Message</label>
+              <textarea class="form-control" rows="5" id="message" required></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-solar w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter my-5 text-center" data-aos="zoom-in">
+      <h4>Subscribe to Our Newsletter</h4>
+      <p>Get the latest solar tips & offers directly to your inbox.</p>
+      <form class="row justify-content-center">
+        <div class="col-12 col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12 col-md-2 mb-3">
+          <button class="btn btn-solar w-100">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- FAQ -->
+    <div class="accordion my-5" id="faqAccordion" data-aos="fade-up">
+      <h4 class="mb-3">Frequently Asked Questions</h4>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            What types of solar panels do you offer?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            We offer high-efficiency monocrystalline and polycrystalline panels.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Do you provide installation services?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Yes, we handle full installation and support.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+
+  
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- Company Logo & Social Media -->
+          <div class="col-md-3 text-center text-md-start mb-3">
+              <img src="LPVTs logo.svg" alt="Company Logo" class="mb-2" style="width: 150px; display: block; margin: 0 auto;">
+              <div class="text-center mt-3">
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" style="color: #9ACD32;"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+
+          <!-- Support Section -->
+          <div class="col-md-3 text-center mb-3">
+              <h5 class="fw-bold">Support</h5>
+              <ul class="list-unstyled">
+                  <li><a href="contact.html" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>FAQs</a></li>
+                  <li><a href="mailto:support@solarcompany.com" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>Email Us</a></li>
+                  <li><a href="contact.html" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>Get in Touch</a></li>
+              </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 text-center mb-3">
+              <h5 class="fw-bold">Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#Home" class="text-white text-decoration-none">Home</a></li>
+                  <li><a href="solutions.html" class="text-white text-decoration-none">Solutions</a></li>
+                  <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                  <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-md-3 text-center text-md-start">
+              <h5>Contact Us</h5>
+              <p><i class="fas fa-map-marker-alt me-2" style="color: #9ACD32;"></i>19b ilabere avenue, ikoyi, · lagos state, nigeria</p>
+              <p><i class="fas fa-envelope me-2" style="color: #9ACD32;"></i>Email: info@leveneenergy.com</p>
+              <p><i class="fas fa-phone me-2" style="color: #9ACD32;"></i>Phone: +234 456 7890</p>
+          </div>
+      </div>
+      <div class="text-center mt-3">
+          <p class="mb-0">&copy; 2025 LPVTS. All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Contact Form Validation
+    const form = document.getElementById('contactForm');
+    const alertDiv = document.getElementById('alertMessage');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+      } else {
+        alertDiv.innerHTML = `
+          <div class="alert alert-success mt-3">Thank you! Your message has been sent.</div>
+        `;
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTop');
+    window.onscroll = function() {
+      if (document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+    backToTopBtn.onclick = function() {
+      document.documentElement.scrollTop = 0;
+    };
+  </script>
+
+  
+    
+<script>
+  AOS.init();
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+    this.reset();
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</body>
+</html>

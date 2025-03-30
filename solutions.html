@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solution</title>
+
+  <link rel="stylesheet" href="solution.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3" id="Home">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="LPVTs logo.svg" alt="Logo" style="height: 40px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section class="sec1">
+  <div class="section animate__animated animate__fadeInUp">
+    <h1 >Our Solution</h1>
+    <p>We offer tailored solar solutions to meet your energy needs, whether you're a homeowner, business owner, or industrial leader.</p>
+    
+    <div class="solution-container" id="solution-container">
+      <!-- Dynamic solution cards will appear here -->
+    </div>
+  </div></section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+      <div class="row">
+          <!-- Company Logo & Social Media -->
+          <div class="col-md-3 text-center text-md-start mb-3">
+              <img src="LPVTs logo.svg" alt="Company Logo" class="mb-2" style="width: 150px; display: block; margin: 0 auto;">
+              <div class="text-center mt-3">
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="me-3" style="color: #9ACD32;"><i class="fab fa-instagram"></i></a>
+                  <a href="#" style="color: #9ACD32;"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+
+          <!-- Support Section -->
+          <div class="col-md-3 text-center mb-3">
+              <h5 class="fw-bold">Support</h5>
+              <ul class="list-unstyled">
+                  <li><a href="contact.html" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>FAQs</a></li>
+                  <li><a href="mailto:support@solarcompany.com" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>Email Us</a></li>
+                  <li><a href="contact.html" class="text-white text-decoration-none"><i class="fas fa-arrow-right me-2"></i>Get in Touch</a></li>
+              </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 text-center mb-3">
+              <h5 class="fw-bold">Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#Home" class="text-white text-decoration-none">Home</a></li>
+                  <li><a href="solutions.html" class="text-white text-decoration-none">Solutions</a></li>
+                  <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                  <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+              </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-md-3 text-center text-md-start">
+              <h5>Contact Us</h5>
+              <p><i class="fas fa-map-marker-alt me-2" style="color: #9ACD32;"></i>19b ilabere avenue, ikoyi, · lagos state, nigeria</p>
+              <p><i class="fas fa-envelope me-2" style="color: #9ACD32;"></i>Email: info@leveneenergy.com</p>
+              <p><i class="fas fa-phone me-2" style="color: #9ACD32;"></i>Phone: +234 456 7890</p>
+          </div>
+      </div>
+      <div class="text-center mt-3">
+          <p class="mb-0">&copy; 2025 LPVTS. All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+
+  <script>
+    // Dynamic Solutions Data
+    const solutions = [
+      {
+        title: "Residential Solar Solutions",
+        description: "Affordable solar panels designed to meet the energy needs of homes. Reduce electricity bills and embrace sustainability.",
+        image: "https://abafis.com.ng/wp-content/uploads/2022/09/featured-image-types-of-solar-panels.jpeg"
+      },
+      {
+        title: "Commercial Solar Solutions",
+        description: "Custom solar systems for businesses and commercial buildings, helping reduce operating costs and carbon footprint.",
+        image: "https://www.whcsolar.com/wp-content/uploads/2022/11/commercial.webp"
+      },
+      {
+        title: "Industrial Solar Power",
+        description: "Large-scale solar solutions for industries, maximizing efficiency and energy independence.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSqmYrV2FxV95sL2JOAqVZXOPvHxxd3WlqA&s"
+      },
+      {
+        title: "Solar Water Heating Systems",
+        description: "Eco-friendly water heating solutions using solar energy, ideal for homes and businesses.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtrPiOAHN2r1buTNXdWkCilrD4ZD0cjMoHRw&s"
+      },
+      {
+        title: "Maintenance & Monitoring",
+        description: "Comprehensive after-installation maintenance and system monitoring to ensure long-term performance.",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNduzKBf9-jiyOMFFOROTViYoePMa-jyCUA&s"
+      }
+    ];
+
+    // Dynamically Generate Cards
+    const container = document.getElementById('solution-container');
+
+    solutions.forEach(solution => {
+      const card = document.createElement('div');
+      card.className = 'solution-card animate__animated animate__fadeInUp';
+      card.innerHTML = `
+        <img src="${solution.image}" alt="${solution.title}" class="solution-img">
+        <h3>${solution.title}</h3>
+        <p>${solution.description}</p>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+    this.reset();
+  });
+</script>
+ 
+</body>
+</html>
